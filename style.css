@@ -1,0 +1,372 @@
+/* ===========================
+   AI Resume Builder
+   style.css 
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* ---------- Login Page ---------- */
+
+.login-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:420px;
+    background:#ffffff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.login-box h1{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    text-align:center;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.login-box label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    outline:none;
+}
+
+.login-box input:focus{
+    border-color:#2563eb;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-box button:hover{
+    background:#1d4ed8;
+}
+
+.demo-login{
+    margin-top:20px;
+    padding:15px;
+    background:#f2f2f2;
+    border-radius:5px;
+}
+
+/* ---------- Header ---------- */
+
+header{
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+}
+
+header h1{
+    font-size:28px;
+}
+
+header button{
+    background:#dc2626;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+header button:hover{
+    background:#b91c1c;
+}
+
+/* ---------- Main Layout ---------- */
+
+.container{
+    width:95%;
+    margin:25px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+/* ---------- Left Section ---------- */
+
+.left{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+}
+
+.left h2{
+
+    margin-bottom:20px;
+
+    color:#2563eb;
+
+}
+
+.left input,
+.left textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+    resize:none;
+
+}
+
+.left input:focus,
+.left textarea:focus{
+
+    border-color:#2563eb;
+
+    outline:none;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:10px;
+
+}
+
+.buttons button{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+.buttons button:nth-child(1){
+
+    background:#2563eb;
+
+}
+
+.buttons button:nth-child(2){
+
+    background:#16a34a;
+
+}
+
+.buttons button:nth-child(3){
+
+    background:#dc2626;
+
+}
+
+.buttons button:hover{
+
+    opacity:.9;
+
+}
+
+/* =====================================
+   AI Resume Builder
+   style.css 
+====================================== */
+
+/* ---------- Resume Preview ---------- */
+
+.right{
+    background:#ffffff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+.right h2{
+    color:#2563eb;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+#resumePreview{
+    background:#ffffff;
+    border:1px solid #ddd;
+    padding:25px;
+    min-height:650px;
+}
+
+#resumePreview h1{
+    color:#2563eb;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+#resumePreview p{
+    margin:8px 0;
+    color:#333;
+    line-height:1.6;
+}
+
+#resumePreview h3{
+    margin-top:20px;
+    color:#2563eb;
+    border-bottom:2px solid #2563eb;
+    padding-bottom:5px;
+}
+
+#resumePreview hr{
+    margin:20px 0;
+}
+
+/* ---------- Download Button ---------- */
+
+.right button{
+    width:100%;
+    padding:12px;
+    background:#16a34a;
+    color:#ffffff;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.right button:hover{
+    background:#15803d;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:992px){
+
+.container{
+    grid-template-columns:1fr;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+    padding:20px;
+}
+
+header h1{
+    font-size:24px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.buttons button{
+    width:100%;
+}
+
+.login-box{
+    width:95%;
+}
+
+.container{
+    width:95%;
+}
+
+#resumePreview{
+    padding:15px;
+}
+
+}
+
+/* ---------- Print Resume ---------- */
+
+@media print{
+
+body{
+    background:white;
+}
+
+header,
+.left,
+.right button{
+    display:none;
+}
+
+.container{
+    display:block;
+    width:100%;
+}
+
+.right{
+    box-shadow:none;
+    padding:0;
+}
+
+#resumePreview{
+    border:none;
+    padding:0;
+}
+
+}

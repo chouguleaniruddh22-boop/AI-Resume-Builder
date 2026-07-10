@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Resume Builder</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+<h1>AI Resume Builder</h1>
+
+<button onclick="logout()">Logout</button>
+
+</header>
+
+<div class="container">
+
+<div class="left">
+
+<h2>Resume Details</h2>
+
+<form id="resumeForm">
+
+<input type="text"
+id="name"
+placeholder="Full Name"
+required>
+
+<input type="email"
+id="email"
+placeholder="Email Address"
+required>
+
+<input type="text"
+id="phone"
+placeholder="Mobile Number"
+required>
+
+<textarea
+id="address"
+placeholder="Address"
+rows="3"></textarea>
+
+<textarea
+id="objective"
+placeholder="Career Objective"
+rows="4"></textarea>
+
+<input type="text"
+id="education"
+placeholder="Education">
+
+<input type="text"
+id="skills"
+placeholder="Skills (Comma Separated)">
+
+<input type="text"
+id="projects"
+placeholder="Projects">
+
+<input type="text"
+id="experience"
+placeholder="Experience">
+
+<input type="text"
+id="certification"
+placeholder="Certifications">
+
+<div class="buttons">
+
+<button type="button"
+onclick="previewResume()">
+Preview Resume
+</button>
+
+<button type="button"
+onclick="saveResume()">
+Save Resume
+</button>
+
+<button type="reset">
+Clear
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+<div class="right">
+
+<h2>Live Resume Preview</h2>
+
+<div id="resumePreview">
+
+<h1 id="pName">Your Name</h1>
+
+<p id="pEmail"></p>
+
+<p id="pPhone"></p>
+
+<p id="pAddress"></p>
+
+<hr>
+
+<h3>Career Objective</h3>
+
+<p id="pObjective"></p>
+
+<h3>Education</h3>
+
+<p id="pEducation"></p>
+
+<h3>Skills</h3>
+
+<p id="pSkills"></p>
+
+<h3>Projects</h3>
+
+<p id="pProjects"></p>
+
+<h3>Experience</h3>
+
+<p id="pExperience"></p>
+
+<h3>Certifications</h3>
+
+<p id="pCertification"></p>
+
+</div>
+
+<br>
+
+<button onclick="downloadPDF()">
+Download Resume PDF
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
